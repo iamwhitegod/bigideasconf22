@@ -11,6 +11,16 @@
 
 /* 05 */
 
+section {
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  -webkit-transform: translateY(8rem);
+  transform: translateY(8rem);
+}
+
 .become-a-sponsor {
   padding: 5rem 0;
   margin-bottom: 15rem;
