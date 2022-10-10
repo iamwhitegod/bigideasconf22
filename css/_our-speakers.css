@@ -1,0 +1,138 @@
+.our-speakers {
+  padding: 9.6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-speakers__caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 7.1rem;
+}
+
+.our-speakers__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 7.2rem 2.4rem;
+}
+
+.our-speakers__card {
+  display: flex;
+  gap: 1.6rem;
+  max-width: 34.36rem;
+}
+
+.our-speakers__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-speakers__img {
+  margin-bottom: 1.6rem;
+  max-width: 34.36rem;
+  /* border-radius: 0.8rem;
+  overflow: hidden; */
+}
+
+.our-speakers h4 {
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  color: #212529;
+  width: 20.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.our-speakers__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-speakers__details p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  max-width: 14.5rem;
+  color: #495057;
+}
+
+.our-speakers__svg {
+  display: flex;
+  gap: 1.43rem;
+  justify-content: end;
+}
+
+.our-speakers .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .our-speakers__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6.4rem 4.8rem;
+  }
+
+  .our-speakers__img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .our-speakers {
+    padding: 9.6rem 0 5.6rem;
+  }
+
+  .our-speakers .container {
+    padding: 0;
+  }
+
+  .our-speakers__caption {
+    padding: 0 2.4rem;
+  }
+
+  .our-speakers .btn {
+    display: none;
+  }
+
+  .our-speakers__scroll {
+    overflow-x: scroll;
+    max-width: 100vw;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0.6rem;
+    background: transparent;
+  }
+
+  .our-speakers__grid {
+    width: 100%;
+    display: flex;
+    gap: 2.4rem;
+    padding-left: 2.4rem;
+  }
+
+  .our-speakers__card {
+    display: flex;
+    gap: 1.6rem;
+    max-width: 45rem;
+  }
+
+  .our-speakers__card:last-child {
+    padding-right: 2.4rem;
+  }
+
+  .our-speakers__svg {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: end;
+    align-items: center;
+  }
+}

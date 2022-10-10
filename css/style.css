@@ -1,0 +1,152 @@
+@import "./_global.css";
+@import "./_typo.css";
+@import "./_layout.css";
+@import "./_button.css";
+@import "./_navigation.css";
+@import "./_header.css";
+@import "./_why-big-ideas.css";
+@import "./_our-speakers.css";
+@import "./_meet-organisers.css";
+@import "./_footer.css";
+
+/* 05 */
+
+.become-a-sponsor {
+  padding: 5rem 0;
+  margin-bottom: 15rem;
+}
+
+.become-a-sponsor__container {
+  display: grid;
+  grid-template-columns: 46rem 1fr;
+  gap: 4rem;
+}
+
+.become-a-sponsor__desc {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #343a40;
+  margin: 1.2rem 0 2.4rem;
+}
+
+.become-a-sponsor__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+  align-self: start;
+}
+
+.become-a-sponsor__sponsor-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 4.4rem;
+
+  border: 2px dashed #495057;
+  border-radius: 2.2rem;
+}
+
+/* 06 */
+
+.join-us {
+  padding: 10.4rem 0 6.4rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rem;
+  text-align: center;
+}
+
+.join-us__wrapper {
+  max-width: 75rem;
+  text-align: center;
+  margin-bottom: 3.2rem;
+  position: relative;
+}
+
+.join-us__desc {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 4.2rem;
+  color: #343a40;
+}
+
+.join-us__right,
+.join-us__left {
+  width: 17rem;
+  height: 12.6rem;
+  position: absolute;
+}
+
+.join-us__right {
+  top: -8rem;
+  right: -8rem;
+}
+
+.join-us__left {
+  bottom: -8rem;
+  left: -8rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .become-a-sponsor__container {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+
+  .become-a-sponsor__content {
+    text-align: center;
+  }
+
+  .join-us__right,
+  .join-us__left {
+    width: 120px;
+    height: 73px;
+  }
+
+  .join-us__right {
+    right: -3.2rem;
+  }
+
+  .join-us__left {
+    left: -3.2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .become-a-sponsor {
+    margin-bottom: 9.6rem;
+  }
+
+  .become-a-sponsor__container {
+    gap: 6.4rem;
+  }
+
+  .become-a-sponsor__sponsor-logo {
+    padding: 4rem;
+    border-radius: 1.6rem;
+  }
+
+  .join-us__right {
+    right: 0;
+    top: -10.4rem;
+  }
+
+  .join-us__left {
+    left: 0;
+    bottom: -15.4rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .become-a-sponsor__sponsor-logo {
+    padding: 4rem 2.4rem;
+  }
+
+  .join-us__right,
+  .join-us__left {
+    width: 5.87rem;
+    height: 3.763;
+  }
+}

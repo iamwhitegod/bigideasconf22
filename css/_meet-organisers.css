@@ -1,0 +1,136 @@
+.meet-organizers {
+  padding-bottom: 25.8rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 9.6rem;
+}
+
+.meet-organizers__caption {
+  margin-bottom: 6.4rem;
+  text-align: center;
+}
+
+.meet-organizers__photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem 2.4rem;
+}
+
+.meet-organizers__card {
+  max-width: 36.3rem;
+  position: relative;
+  height: max-content;
+  border-radius: 1.6rem;
+  overflow: hidden;
+}
+
+.meet-organizers__card:nth-child(3n - 1) {
+  top: 6.4rem;
+}
+
+.meet-organizers__card span {
+  position: absolute;
+  left: 50%;
+  bottom: 2.4rem;
+  transform: translateX(-50%);
+  z-index: 4;
+
+  display: block;
+  width: max-content;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #ffffff;
+}
+
+.meet-organizers__img {
+  cursor: pointer;
+}
+
+.meet-organizers__img img {
+  display: block;
+  transition: all 0.8s;
+}
+
+.meet-organizers__img::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgba(234, 91, 12, 0.53) 3.12%,
+    rgba(231, 29, 115, 0.16) 100%
+  );
+
+  background-color: #2125297e;
+
+  transition: all 0.8s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.meet-organizers__img:hover::after {
+  background-image: linear-gradient(
+    0deg,
+    rgba(234, 91, 12, 0.3) 3.12%,
+    rgba(231, 29, 115, 0.16) 100%
+  );
+}
+
+.meet-organizers__img:hover img {
+  transform: scale(1.1);
+}
+
+.meet-organizers__socials {
+  position: absolute;
+  right: 2.4rem;
+  bottom: 3.2rem;
+  z-index: 4;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.meet-organizers__icon {
+  cursor: pointer;
+}
+
+.meet-organizers__icon:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .meet-organizers__photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meet-organizers__card:nth-child(3n - 1) {
+    top: 0;
+  }
+
+  /* .meet-organizers__grid {
+    width: 100%;
+    display: flex;
+    gap: 2.4rem;
+  } */
+}
+
+@media only screen and (max-width: 600px) {
+  .meet-organizers {
+    padding-bottom: 9.6rem;
+    padding-top: 6.4rem;
+  }
+
+  .meet-organizers__photos {
+    grid-template-columns: 1fr;
+  }
+
+  .meet-organizers__card {
+    width: 100%;
+  }
+}

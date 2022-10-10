@@ -1,0 +1,36 @@
+.btn {
+  display: inline-block;
+  padding: 1.4rem 4rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: linear-gradient(95.06deg, #ea5b0c -20.91%, #e71d73 94.91%);
+  color: #ffffff;
+}
+
+.btn--full-width {
+  padding: 1.6rem;
+  width: 100%;
+}
+
+.btn--ghost {
+  background: none;
+  color: #212529;
+}
+
+.ghost {
+  padding: 1.4rem 4rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}

@@ -1,0 +1,77 @@
+@import "./_global.css";
+@import "./_typo.css";
+@import "./_button.css";
+@import "./_layout.css";
+@import "./_navigation.css";
+@import "./_header.css";
+@import "./_footer.css";
+
+::-webkit-inner-spin-button {
+  display: none;
+}
+
+::-moz-inner-spin-button {
+  display: none;
+}
+
+::-ms-inner-spin-button {
+  display: none;
+}
+
+.registration-form {
+  padding-bottom: 10.4rem;
+}
+
+.registration-form__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(46.8rem, 1fr));
+  gap: 4.8rem;
+  margin-bottom: 5.6rem;
+}
+
+.registration-form span {
+  font-weight: 600;
+  font-size: clamp(1.6rem, 3.2vw, 4.8rem);
+  line-height: clamp(3.2rem, 4.8vw, 8rem);
+}
+
+.registration-form fieldset {
+  border: none;
+  border-bottom: 1.6px solid hsla(210, 7%, 56%, 1);
+  display: inline-block;
+}
+
+.registration-form label {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.registration-form input {
+  display: block;
+  font-weight: 600;
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  line-height: clamp(3.2rem, 4.8vw, 3.2rem);
+  outline: none;
+  border: none;
+  color: inherit;
+  width: 100%;
+  height: 4.8rem;
+}
+
+.registration-form input::placeholder {
+  font-weight: 600;
+  font-size: clamp(1.6rem, 3.2vw, 4.8rem);
+  line-height: clamp(3.2rem, 4.8vw, 8rem);
+}
+
+@media only screen and (max-width: 600px) {
+  .registration-form__grid {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .registration-form input {
+    height: 3.2rem;
+  }
+}

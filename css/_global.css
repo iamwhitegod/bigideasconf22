@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* tap-highlight-color: transparent; */
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: #212529;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #212529;
+}
+/*
+  Utility Classes 
+*/
+
+.text--gradient {
+  display: inline-block;
+  background: linear-gradient(95.06deg, #ea5b0c -20.91%, #e71d73 94.91%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  color: transparent;
+}
+
+.fw--800 {
+  font-weight: 800;
+}
+
+.dis--block {
+  display: block;
+}
+
+.center--block {
+  margin: 0 auto;
+}
+
+.uti-mrg-tp {
+  margin-top: 7.2rem;
+}
