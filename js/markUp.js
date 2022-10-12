@@ -22,7 +22,7 @@ export const html = `
              >${data?.email}.</span
            >
            If you have a special request, kindly reach out to
-           <span class="text--gradient fw--800">bigideas@gmail.com</span>
+           <span class="text--gradient fw--800">bigideasconf@gmail.com</span>
          </p>
        </div>
  
