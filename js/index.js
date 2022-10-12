@@ -86,6 +86,19 @@ const handleRegistration = function () {
     data.accessID = accessID;
     const res = await createDoc(data);
 
+    const sendEmail = await fetch(
+      "https://bigideasconf.herokuapp.com/register",
+      {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      }
+    );
+
+    const response = await sendEmail.json();
     sessionStorage.setItem("newData", JSON.stringify(res));
 
     // Clear Input values
