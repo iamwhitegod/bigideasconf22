@@ -82,6 +82,10 @@
     padding: 10vh 0;
   }
 
+  .header--success {
+    padding: 5vh 0;
+  }
+
   .header__cta {
     flex-direction: column;
   }

@@ -1,0 +1,28 @@
+@import "./_global.css";
+@import "./_typo.css";
+@import "./_button.css";
+@import "./_layout.css";
+@import "./_navigation.css";
+@import "./_header.css";
+@import "./_footer.css";
+
+.join-space {
+  margin-top: 2.4rem;
+}
+
+.join-space svg {
+  margin-bottom: 2.4rem;
+}
+
+.success--desc {
+}
+
+.join-space__socials {
+  display: flex;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+
+.join-space__socials > *:not(:last-child) {
+  margin-right: 1.6rem;
+}

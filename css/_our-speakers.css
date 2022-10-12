@@ -15,7 +15,7 @@
 
 .our-speakers__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 7.2rem 2.4rem;
 }
 
@@ -31,15 +31,15 @@
 }
 
 .our-speakers__img {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
   max-width: 34.36rem;
   /* border-radius: 0.8rem;
   overflow: hidden; */
 }
 
 .our-speakers h4 {
-  font-weight: 500;
-  font-size: 2.2rem;
+  font-weight: 600;
+  font-size: 1.8rem;
   line-height: 3rem;
   color: #212529;
   width: 20.1rem;
@@ -64,6 +64,7 @@
   display: flex;
   gap: 1.43rem;
   justify-content: end;
+  align-items: center;
 }
 
 .our-speakers .btn {
