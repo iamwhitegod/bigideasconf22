@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"node_modules/process/browser.js":[function(require,module,exports) {
+})({"g5IB":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -326,7 +326,7 @@ process.chdir = function (dir) {
 process.umask = function () {
   return 0;
 };
-},{}],"node_modules/@firebase/util/dist/index.esm2017.js":[function(require,module,exports) {
+},{}],"VOc0":[function(require,module,exports) {
 var global = arguments[3];
 var process = require("process");
 "use strict";
@@ -2688,7 +2688,7 @@ function getModularInstance(service) {
     return service;
   }
 }
-},{"process":"node_modules/process/browser.js"}],"node_modules/@firebase/component/dist/esm/index.esm2017.js":[function(require,module,exports) {
+},{"process":"g5IB"}],"bXWY":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3165,7 +3165,7 @@ class ComponentContainer {
 }
 
 exports.ComponentContainer = ComponentContainer;
-},{"@firebase/util":"node_modules/@firebase/util/dist/index.esm2017.js"}],"node_modules/@firebase/logger/dist/esm/index.esm2017.js":[function(require,module,exports) {
+},{"@firebase/util":"VOc0"}],"uNCT":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3423,7 +3423,7 @@ function setUserLogHandler(logCallback, options) {
     }
   }
 }
-},{}],"node_modules/idb/build/wrap-idb-value.js":[function(require,module,exports) {
+},{}],"yLTS":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3621,7 +3621,7 @@ function wrap(value) {
 const unwrap = value => reverseTransformCache.get(value);
 
 exports.u = unwrap;
-},{}],"node_modules/idb/build/index.js":[function(require,module,exports) {
+},{}],"ZUep":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3728,7 +3728,7 @@ function getMethod(target, prop) {
   get: (target, prop, receiver) => getMethod(target, prop) || oldTraps.get(target, prop, receiver),
   has: (target, prop) => !!getMethod(target, prop) || oldTraps.has(target, prop)
 }));
-},{"./wrap-idb-value.js":"node_modules/idb/build/wrap-idb-value.js"}],"node_modules/@firebase/app/dist/esm/index.esm2017.js":[function(require,module,exports) {
+},{"./wrap-idb-value.js":"yLTS"}],"qn02":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4843,7 +4843,7 @@ function registerCoreComponents(variant) {
 
 
 registerCoreComponents('');
-},{"@firebase/component":"node_modules/@firebase/component/dist/esm/index.esm2017.js","@firebase/logger":"node_modules/@firebase/logger/dist/esm/index.esm2017.js","@firebase/util":"node_modules/@firebase/util/dist/index.esm2017.js","idb":"node_modules/idb/build/index.js"}],"node_modules/@firebase/webchannel-wrapper/dist/index.esm2017.js":[function(require,module,exports) {
+},{"@firebase/component":"bXWY","@firebase/logger":"uNCT","@firebase/util":"VOc0","idb":"ZUep"}],"ygBT":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
 
@@ -7568,7 +7568,7 @@ var WebChannel = esm.WebChannel = Ub;
 exports.WebChannel = WebChannel;
 var XhrIo = esm.XhrIo = W;
 exports.XhrIo = XhrIo;
-},{}],"node_modules/@firebase/firestore/dist/index.esm2017.js":[function(require,module,exports) {
+},{}],"TIij":[function(require,module,exports) {
 var define;
 var process = require("process");
 "use strict";
@@ -40724,7 +40724,7 @@ function $l(t, e) {
   }, "PUBLIC").setMultipleInstances(!0)), (0, _app.registerVersion)(b, "3.6.0", t), // BUILD_TARGET will be replaced by values like esm5, esm2017, cjs5, etc during the compilation
   (0, _app.registerVersion)(b, "3.6.0", "esm2017");
 }();
-},{"@firebase/app":"node_modules/@firebase/app/dist/esm/index.esm2017.js","@firebase/component":"node_modules/@firebase/component/dist/esm/index.esm2017.js","@firebase/logger":"node_modules/@firebase/logger/dist/esm/index.esm2017.js","@firebase/util":"node_modules/@firebase/util/dist/index.esm2017.js","@firebase/webchannel-wrapper":"node_modules/@firebase/webchannel-wrapper/dist/index.esm2017.js","process":"node_modules/process/browser.js"}],"node_modules/firebase/firestore/dist/index.esm.js":[function(require,module,exports) {
+},{"@firebase/app":"qn02","@firebase/component":"bXWY","@firebase/logger":"uNCT","@firebase/util":"VOc0","@firebase/webchannel-wrapper":"ygBT","process":"g5IB"}],"MGW6":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -40743,7 +40743,7 @@ Object.keys(_firestore).forEach(function (key) {
     }
   });
 });
-},{"@firebase/firestore":"node_modules/@firebase/firestore/dist/index.esm2017.js"}],"node_modules/firebase/app/dist/index.esm.js":[function(require,module,exports) {
+},{"@firebase/firestore":"TIij"}],"x1IT":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -40782,7 +40782,7 @@ var version = "9.11.0";
  */
 
 (0, _app.registerVersion)(name, version, 'app');
-},{"@firebase/app":"node_modules/@firebase/app/dist/esm/index.esm2017.js"}],"node_modules/@firebase/installations/dist/esm/index.esm2017.js":[function(require,module,exports) {
+},{"@firebase/app":"qn02"}],"kvTz":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -42198,7 +42198,7 @@ registerInstallations();
 (0, _app.registerVersion)(name, version); // BUILD_TARGET will be replaced by values like esm5, esm2017, cjs5, etc during the compilation
 
 (0, _app.registerVersion)(name, version, 'esm2017');
-},{"@firebase/app":"node_modules/@firebase/app/dist/esm/index.esm2017.js","@firebase/component":"node_modules/@firebase/component/dist/esm/index.esm2017.js","@firebase/util":"node_modules/@firebase/util/dist/index.esm2017.js","idb":"node_modules/idb/build/index.js"}],"node_modules/@firebase/analytics/dist/esm/index.esm2017.js":[function(require,module,exports) {
+},{"@firebase/app":"qn02","@firebase/component":"bXWY","@firebase/util":"VOc0","idb":"ZUep"}],"LjKA":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43628,7 +43628,7 @@ function registerAnalytics() {
 }
 
 registerAnalytics();
-},{"@firebase/app":"node_modules/@firebase/app/dist/esm/index.esm2017.js","@firebase/logger":"node_modules/@firebase/logger/dist/esm/index.esm2017.js","@firebase/util":"node_modules/@firebase/util/dist/index.esm2017.js","@firebase/component":"node_modules/@firebase/component/dist/esm/index.esm2017.js","@firebase/installations":"node_modules/@firebase/installations/dist/esm/index.esm2017.js"}],"node_modules/firebase/analytics/dist/index.esm.js":[function(require,module,exports) {
+},{"@firebase/app":"qn02","@firebase/logger":"uNCT","@firebase/util":"VOc0","@firebase/component":"bXWY","@firebase/installations":"kvTz"}],"ZmTQ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43647,7 +43647,7 @@ Object.keys(_analytics).forEach(function (key) {
     }
   });
 });
-},{"@firebase/analytics":"node_modules/@firebase/analytics/dist/esm/index.esm2017.js"}],"js/firebase.js":[function(require,module,exports) {
+},{"@firebase/analytics":"LjKA"}],"TXxf":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43676,7 +43676,7 @@ var firebaseConfig = {
 var app = (0, _app.initializeApp)(firebaseConfig);
 var db = (0, _firestore.getFirestore)(app);
 exports.db = db;
-},{"firebase/app":"node_modules/firebase/app/dist/index.esm.js","firebase/analytics":"node_modules/firebase/analytics/dist/index.esm.js","firebase/firestore":"node_modules/firebase/firestore/dist/index.esm.js"}],"js/signups.js":[function(require,module,exports) {
+},{"firebase/app":"x1IT","firebase/analytics":"ZmTQ","firebase/firestore":"MGW6"}],"EPBk":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43767,7 +43767,7 @@ var getSignup = /*#__PURE__*/function () {
 }();
 
 exports.getSignup = getSignup;
-},{"firebase/firestore":"node_modules/firebase/firestore/dist/index.esm.js","./firebase":"js/firebase.js"}],"js/markUp.js":[function(require,module,exports) {
+},{"firebase/firestore":"MGW6","./firebase":"TXxf"}],"STLE":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43780,7 +43780,7 @@ if (data) {}
 
 var html = "\n     <div class=\"container\">\n       <span class=\"heading--caption\">\n         BIG IDEAS <span class=\"text--gradient fw--800\">CONF</span>. 2022\n       </span>\n \n       <h1 class=\"heading--primary\">\n         Hello ".concat(data === null || data === void 0 ? void 0 : data.firstname, ", Your seat has been reserved.\n       </h1>\n \n       <div class=\"invite-noti\">\n         <p class=\"success--desc\">Thank you for registering.</p>\n \n         <p class=\"success--desc\">\n           Your invite has been sent to\n           <span class=\"text--gradient fw--800\"\n             >").concat(data === null || data === void 0 ? void 0 : data.email, ".</span\n           >\n           If you have a special request, kindly reach out to\n           <span class=\"text--gradient fw--800\">bigideasconf@gmail.com</span>\n         </p>\n       </div>\n \n       <div class=\"join-space\">\n         <p>Join upcoming twitter space to know more about BIG IDEAS</p>\n \n         <a href=\"https://twitter.com/yoggasoft_\" target=\"_blank\">\n           <svg\n             width=\"70\"\n             height=\"70\"\n             viewBox=\"0 0 70 70\"\n             fill=\"none\"\n             xmlns=\"http://www.w3.org/2000/svg\"\n           >\n             <path\n               d=\"M67.3246 14.8631C64.8806 15.925 62.2948 16.6246 59.6488 16.9398C62.4295 15.3115 64.5207 12.7247 65.5302 9.66439C62.9011 11.2017 60.0296 12.2804 57.0386 12.8542C55.7791 11.5342 54.2643 10.4841 52.5863 9.76775C50.9084 9.05139 49.1023 8.68372 47.2778 8.6871C39.891 8.6871 33.9132 14.578 33.9132 21.8399C33.908 22.85 34.0237 23.8571 34.258 24.8397C28.9612 24.5914 23.7745 23.2401 19.0298 20.8725C14.2851 18.5048 10.0868 15.1728 6.70361 11.0896C5.5167 13.0905 4.889 15.3735 4.8861 17.7C4.8861 22.2607 7.26556 26.292 10.8585 28.6538C8.72978 28.6033 6.64469 28.0399 4.78023 27.0114V27.1743C4.78023 33.5539 9.39525 38.8612 15.5034 40.0692C14.3547 40.3754 13.1711 40.5306 11.9824 40.5307C11.1389 40.5322 10.2973 40.4504 9.46991 40.2864C11.168 45.5122 16.1101 49.3129 21.9644 49.4214C17.2074 53.0876 11.367 55.0691 5.36118 55.0545C4.29513 55.0529 3.23008 54.9894 2.17139 54.8645C8.2811 58.7658 15.3832 60.8294 22.6322 60.8097C47.2493 60.8097 60.698 40.7615 60.698 23.3737C60.698 22.8036 60.6831 22.2335 60.6559 21.677C63.2662 19.8202 65.5245 17.5128 67.3246 14.8631V14.8631Z\"\n               fill=\"url(#paint0_linear_496_397)\"\n             />\n             <defs>\n               <linearGradient\n                 id=\"paint0_linear_496_397\"\n                 x1=\"-12.6566\"\n                 y1=\"8.68707\"\n                 x2=\"68.484\"\n                 y2=\"17.6601\"\n                 gradientUnits=\"userSpaceOnUse\"\n               >\n                 <stop stop-color=\"#EA5B0C\" />\n                 <stop offset=\"1\" stop-color=\"#E71D73\" />\n               </linearGradient>\n             </defs>\n           </svg>\n         </a>\n \n         <p>Get updates constant on our social media.</p>\n \n         <div class=\"join-space__socials\">\n           <a href=\"https://twitter.com/yoggasoft_\" target=\"_blank\">\n             <svg\n               width=\"22\"\n               height=\"18\"\n               viewBox=\"0 0 22 18\"\n               fill=\"none\"\n               xmlns=\"http://www.w3.org/2000/svg\"\n             >\n               <path\n                 d=\"M21.2538 2.27068C20.4624 2.61454 19.6251 2.84108 18.7683 2.94314C19.6687 2.41589 20.3459 1.57825 20.6727 0.587333C19.8214 1.08513 18.8916 1.4344 17.9231 1.6202C17.5153 1.19278 17.0248 0.852759 16.4815 0.6208C15.9381 0.388841 15.3533 0.26979 14.7625 0.270881C12.3707 0.270881 10.4351 2.17838 10.4351 4.52979C10.4334 4.85686 10.4709 5.18296 10.5467 5.50112C8.83158 5.42072 7.15211 4.98319 5.61577 4.21653C4.07942 3.44987 2.72001 2.37096 1.62453 1.04882C1.2402 1.69672 1.03695 2.43596 1.03601 3.18927C1.03601 4.66604 1.80649 5.97141 2.96989 6.73616C2.2806 6.71981 1.60545 6.53737 1.00173 6.20435V6.25709C1.00173 8.32282 2.49609 10.0413 4.47391 10.4325C4.10198 10.5316 3.71872 10.5819 3.33381 10.5819C3.06068 10.5824 2.78818 10.5559 2.52026 10.5028C3.0701 12.195 4.67037 13.4256 6.56601 13.4608C5.02567 14.6479 3.13454 15.2895 1.18985 15.2848C0.844657 15.2842 0.49979 15.2637 0.156982 15.2232C2.13532 16.4865 4.43499 17.1547 6.78225 17.1483C14.7533 17.1483 19.108 10.6566 19.108 5.02645C19.108 4.84185 19.1032 4.65725 19.0944 4.47705C19.9396 3.87582 20.6709 3.12866 21.2538 2.27068Z\"\n                 fill=\"#343A40\"\n               />\n             </svg>\n           </a>\n \n           <a\n             href=\"https://www.linkedin.com/in/yoggasoft-inc-601880232\"\n             target=\"_blank\"\n             rel=\"noopener noreferrer\"\n           >\n             <svg\n               width=\"21\"\n               height=\"21\"\n               viewBox=\"0 0 21 21\"\n               fill=\"none\"\n               xmlns=\"http://www.w3.org/2000/svg\"\n             >\n               <path\n                 d=\"M18.6681 0.864502H2.23508C1.33715 0.864502 0.552612 1.51059 0.552612 2.39797V18.8675C0.552612 19.7597 1.33715 20.5548 2.23508 20.5548H18.6633C19.5661 20.5548 20.2429 19.7545 20.2429 18.8675V2.39797C20.2482 1.51059 19.5661 0.864502 18.6681 0.864502ZM6.65617 17.2774H3.83536V8.50681H6.65617V17.2774ZM5.34334 7.17332H5.32312C4.42035 7.17332 3.8358 6.5013 3.8358 5.66006C3.8358 4.80345 4.43574 4.14725 5.35872 4.14725C6.28171 4.14725 6.84648 4.79861 6.8667 5.66006C6.86626 6.5013 6.2817 7.17332 5.34334 7.17332ZM16.9655 17.2774H14.1446V12.4818C14.1446 11.3329 13.7341 10.5479 12.7136 10.5479C11.9339 10.5479 11.4724 11.0753 11.2671 11.5891C11.1902 11.7737 11.1696 12.0251 11.1696 12.2818V17.2774H8.34875V8.50681H11.1696V9.72734C11.5801 9.14279 12.2213 8.30155 13.7135 8.30155C15.5652 8.30155 16.9659 9.52209 16.9659 12.1535L16.9655 17.2774Z\"\n                 fill=\"#343A40\"\n               />\n             </svg>\n           </a>\n \n           <a\n             href=\"https://facebook.com/yogasoft\"\n             target=\"_blank\"\n             rel=\"noopener noreferrer\"\n           >\n             <svg\n               width=\"20\"\n               height=\"21\"\n               viewBox=\"0 0 20 21\"\n               fill=\"none\"\n               xmlns=\"http://www.w3.org/2000/svg\"\n             >\n               <path\n                 fill-rule=\"evenodd\"\n                 clip-rule=\"evenodd\"\n                 d=\"M19.9354 10.7689C19.9354 5.33205 15.5271 0.923706 10.0903 0.923706C4.65346 0.923706 0.245117 5.33205 0.245117 10.7689C0.245117 15.6827 3.84475 19.7557 8.55197 20.4949V13.6156H6.05156V10.7689H8.55197V8.59985C8.55197 6.13285 10.0222 4.76903 12.2707 4.76903C13.348 4.76903 14.4749 4.96154 14.4749 4.96154V7.38459H13.2328C12.0105 7.38459 11.6281 8.1432 11.6281 8.9229V10.7689H14.3584L13.9224 13.6156H11.6286V20.4958C16.3358 19.757 19.9354 15.684 19.9354 10.7689Z\"\n                 fill=\"#343A40\"\n               />\n             </svg>\n           </a>\n         </div>\n       </div>\n     </div>\n   ");
 exports.html = html;
-},{}],"node_modules/short-unique-id/dist/short-unique-id.js":[function(require,module,exports) {
+},{}],"byk6":[function(require,module,exports) {
 var ShortUniqueId = (() => {
   var __defProp = Object.defineProperty;
   var __getOwnPropSymbols = Object.getOwnPropertySymbols;
@@ -43995,7 +43995,7 @@ var ShortUniqueId = (() => {
 })();
 
 'undefined'!=typeof module&&(module.exports=ShortUniqueId.default),'undefined'!=typeof window&&(ShortUniqueId=ShortUniqueId.default);
-},{}],"js/index.js":[function(require,module,exports) {
+},{}],"QvaY":[function(require,module,exports) {
 "use strict";
 
 var _signups = require("./signups");
@@ -44172,209 +44172,5 @@ var init = function init() {
 };
 
 init();
-},{"./signups":"js/signups.js","./markUp":"js/markUp.js","short-unique-id":"node_modules/short-unique-id/dist/short-unique-id.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
-var global = arguments[3];
-var OVERLAY_ID = '__parcel__error__overlay__';
-var OldModule = module.bundle.Module;
-
-function Module(moduleName) {
-  OldModule.call(this, moduleName);
-  this.hot = {
-    data: module.bundle.hotData,
-    _acceptCallbacks: [],
-    _disposeCallbacks: [],
-    accept: function (fn) {
-      this._acceptCallbacks.push(fn || function () {});
-    },
-    dispose: function (fn) {
-      this._disposeCallbacks.push(fn);
-    }
-  };
-  module.bundle.hotData = null;
-}
-
-module.bundle.Module = Module;
-var checkedAssets, assetsToAccept;
-var parent = module.bundle.parent;
-
-if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = "" || location.hostname;
-  var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51113" + '/');
-
-  ws.onmessage = function (event) {
-    checkedAssets = {};
-    assetsToAccept = [];
-    var data = JSON.parse(event.data);
-
-    if (data.type === 'update') {
-      var handled = false;
-      data.assets.forEach(function (asset) {
-        if (!asset.isNew) {
-          var didAccept = hmrAcceptCheck(global.parcelRequire, asset.id);
-
-          if (didAccept) {
-            handled = true;
-          }
-        }
-      }); // Enable HMR for CSS by default.
-
-      handled = handled || data.assets.every(function (asset) {
-        return asset.type === 'css' && asset.generated.js;
-      });
-
-      if (handled) {
-        console.clear();
-        data.assets.forEach(function (asset) {
-          hmrApply(global.parcelRequire, asset);
-        });
-        assetsToAccept.forEach(function (v) {
-          hmrAcceptRun(v[0], v[1]);
-        });
-      } else if (location.reload) {
-        // `location` global exists in a web worker context but lacks `.reload()` function.
-        location.reload();
-      }
-    }
-
-    if (data.type === 'reload') {
-      ws.close();
-
-      ws.onclose = function () {
-        location.reload();
-      };
-    }
-
-    if (data.type === 'error-resolved') {
-      console.log('[parcel] ✨ Error resolved');
-      removeErrorOverlay();
-    }
-
-    if (data.type === 'error') {
-      console.error('[parcel] 🚨  ' + data.error.message + '\n' + data.error.stack);
-      removeErrorOverlay();
-      var overlay = createErrorOverlay(data);
-      document.body.appendChild(overlay);
-    }
-  };
-}
-
-function removeErrorOverlay() {
-  var overlay = document.getElementById(OVERLAY_ID);
-
-  if (overlay) {
-    overlay.remove();
-  }
-}
-
-function createErrorOverlay(data) {
-  var overlay = document.createElement('div');
-  overlay.id = OVERLAY_ID; // html encode message and stack trace
-
-  var message = document.createElement('div');
-  var stackTrace = document.createElement('pre');
-  message.innerText = data.error.message;
-  stackTrace.innerText = data.error.stack;
-  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
-  return overlay;
-}
-
-function getParents(bundle, id) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return [];
-  }
-
-  var parents = [];
-  var k, d, dep;
-
-  for (k in modules) {
-    for (d in modules[k][1]) {
-      dep = modules[k][1][d];
-
-      if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
-        parents.push(k);
-      }
-    }
-  }
-
-  if (bundle.parent) {
-    parents = parents.concat(getParents(bundle.parent, id));
-  }
-
-  return parents;
-}
-
-function hmrApply(bundle, asset) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return;
-  }
-
-  if (modules[asset.id] || !bundle.parent) {
-    var fn = new Function('require', 'module', 'exports', asset.generated.js);
-    asset.isNew = !modules[asset.id];
-    modules[asset.id] = [fn, asset.deps];
-  } else if (bundle.parent) {
-    hmrApply(bundle.parent, asset);
-  }
-}
-
-function hmrAcceptCheck(bundle, id) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return;
-  }
-
-  if (!modules[id] && bundle.parent) {
-    return hmrAcceptCheck(bundle.parent, id);
-  }
-
-  if (checkedAssets[id]) {
-    return;
-  }
-
-  checkedAssets[id] = true;
-  var cached = bundle.cache[id];
-  assetsToAccept.push([bundle, id]);
-
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    return true;
-  }
-
-  return getParents(global.parcelRequire, id).some(function (id) {
-    return hmrAcceptCheck(global.parcelRequire, id);
-  });
-}
-
-function hmrAcceptRun(bundle, id) {
-  var cached = bundle.cache[id];
-  bundle.hotData = {};
-
-  if (cached) {
-    cached.hot.data = bundle.hotData;
-  }
-
-  if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
-    cached.hot._disposeCallbacks.forEach(function (cb) {
-      cb(bundle.hotData);
-    });
-  }
-
-  delete bundle.cache[id];
-  bundle(id);
-  cached = bundle.cache[id];
-
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    cached.hot._acceptCallbacks.forEach(function (cb) {
-      cb();
-    });
-
-    return true;
-  }
-}
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/index.js"], null)
-//# sourceMappingURL=/js.00a46daa.js.map
+},{"./signups":"EPBk","./markUp":"STLE","short-unique-id":"byk6"}]},{},["QvaY"], null)
+//# sourceMappingURL=/js.bccd3990.js.map
