@@ -14,6 +14,7 @@ export const getSignup = async function () {
   querySnapshot.forEach((doc) => {
     const data = doc.data();
 
+    console.log(data);
     return data;
   });
 };

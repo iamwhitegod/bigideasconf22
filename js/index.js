@@ -133,3 +133,7 @@ const init = function () {
 };
 
 init();
+
+// const signups = async () => await getSignup();
+// getSignup();
+// console.log(signups);
